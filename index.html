@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RESPONSI PWEB</title>
+    <link rel="stylesheet" href="tampilan.css">
+</head>
+<body>
+     
+    <div class="badan">
+        <h2>Toko Bangunan</h2>
+ 
+        <div class="list-produk">
+            <img src="semen.jfif" alt="Jaket Parasut">
+ 
+            <h4>Semen /40kg</h4>
+            <h5>Rp 50.000,-</h5>
+
+            <a class="tombol tombol-detail" href="#">Detail</a> 
+            <a class="tombol tombol-beli" href="#order">Beli</a>
+        </div>
+ 
+        <div class="list-produk">
+            <img src="pasir.jpg" alt="Jaket Tactical">
+ 
+            <h4>Pasir putih bangka /M3</h4>
+            <h5>Rp 260.000,-</h5>
+ 
+            <a class="tombol tombol-detail" href="#">Detail</a>
+            <a class="tombol tombol-beli" href="#order">Beli</a>
+        </div>
+ 
+        <div class="list-produk">
+            <img src="besi.jfif" alt="Jaket Bomber Stylish">
+ 
+            <h4>Besi Beton Full SNI 10</h4>
+            <h5>Rp 52.000,-</h5>
+ 
+            <a class="tombol tombol-detail" href="#">Detail</a>
+            <a class="tombol tombol-beli" href="#order">Beli</a>
+        </div>
+ 
+        <div class="list-produk">
+            <img src="kayu.jpg" alt="Jaket Naruto">
+ 
+            <h4>Kayu /batang</h4>
+            <h5>Rp 15.000,-</h5>
+ 
+            <a class="tombol tombol-detail" href="#">Detail</a> 
+            <a class="tombol tombol-beli" href="#order">Beli</a>
+        </div>
+
+        <div class="list-produk">
+            <img src="genteng.jfif" alt="Jaket Naruto">
+ 
+            <h4>Genteng /buah</h4>
+            <h5>Rp 2.900,-</h5>
+ 
+            <a class="tombol tombol-detail" href="#">Detail</a> 
+            <a class="tombol tombol-beli" href="#order">Beli</a>
+        </div>
+
+        <div class="list-produk">
+            <img src="paku.jpg" alt="Jaket Naruto">
+ 
+            <h4>Paku /kg</h4>
+            <h5>Rp 24.000,-</h5>
+ 
+            <a class="tombol tombol-detail" href="#">Detail</a> 
+            <a class="tombol tombol-beli" href="#order">Beli</a>
+        </div>
+
+        <div class="list-produk">
+            <img src="pipa.jfif" alt="Jaket Naruto">
+ 
+            <h4>Pipa /batang</h4>
+            <h5>Rp 28.000,-</h5>
+ 
+            <a class="tombol tombol-detail" href="#">Detail</a> 
+            <a class="tombol tombol-beli" href="#order">Beli</a>
+        </div>
+
+        <div class="list-produk">
+            <img src="keramik.jpg" alt="Jaket Naruto">
+ 
+            <h4>Keramik /dus</h4>
+            <h5>Rp 46.000,-</h5>
+ 
+            <a class="tombol tombol-detail" href="#">Detail</a> 
+            <a class="tombol tombol-beli" href="#order">Beli</a>
+        </div>
+
+        <SCRIPT language="JavaScript">
+        <!--
+        function hitungtotal(){
+        var nama = (document.fform.inama.value);
+        var tujuan = (document.fform.itujuan.value);
+        var jumlahpaket = parseFloat(document.fform.ijumlah.value);
+        var ht = 0.0;
+        var sub = 0.0; 
+        if (tujuan=="Semen"){
+            ht =50000;
+        }
+        else if (tujuan=="Pasir"){
+            ht =260000;
+        }
+        else if (tujuan=="Besi Beton"){
+            ht =52000;
+        }
+        else if (tujuan=="Kayu"){
+            ht =15000;
+        }
+        else if (tujuan=="Genteng"){
+            ht =2900;
+        }
+        else if (tujuan=="Paku"){
+            ht =24000;
+        }
+        else if (tujuan=="Pipa"){
+            ht =28000;
+        }
+        else{
+            ht =46000;
+        }
+        sub = jumlahpaket*ht;
+        
+
+        document.fform.osub.value=eval(sub);
+
+        }
+        //--></SCRIPT>
+
+        <div class="order">
+            <form name="fform" method="post" action="proses.php">
+                <table border="0" align="center"width="50%" id="order">
+                    <tr>
+                        <td width="100%" ><H2 ALIGN="center">Order</H2></td>
+                    </tr>
+                    <tr>
+                        <td><PRE>
+                            <table>
+                                <tr>
+                                    <td>Nama </td>
+                                    <td>:<input type="text" size="20" name="inama" id="inama"></td>
+                                </tr>
+                                <tr>
+                                    <td>Pilihan</td>
+                                    <td>:<select name="itujuan" size=1 id="itujuan">
+                                        <option value="Semen">Semen</option>
+                                        <option value="Pasir">Pasir</option>
+                                        <option value="Besi Beton">Besi Beton</option>
+                                        <option value="Kayu">Kayu</option>
+                                        <option value="Genteng">Genteng</option>
+                                        <option value="Paku">Paku</option>
+                                        <option value="Pipa">Pipa</option>
+                                        <option value="Keramik">Keramik</option></select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jumlah Barang</td>
+                                    <td>:<input type="text" size="11" name="ijumlah" id="ijumlah"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Bayar</td>
+                                    <td>:<input type="text" size="10"  name="osub" id="osub"></td>
+                                </tr>
+                        
+                            </table>
+                        <td><pre>
+                    </tr>
+                    <tr>
+                        <td width="100%">
+                        <center>
+                        <INPUT TYPE="submit" value="Order" onclick="hitungtotal()">
+                        <INPUT TYPE="reset" value="Reset">
+                        </center></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </div>
+ 
+</body>
+</html>
